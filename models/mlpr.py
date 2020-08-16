@@ -7,7 +7,11 @@ class MLPR:
         self.response = response
         self.random_state = random_state
         self.max_iterations = max_iterations
-        self.model = MLPRegressor(random_state, max_iterations).fit(predictor, response)
+        self.model = MLPRegressor(
+            random_state=random_state, 
+            max_iter=max_iterations
+            )
+        self.model.fit(predictor, response)
 
     def predict(self, test):
         return self.model.predict(test)

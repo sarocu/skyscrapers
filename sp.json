@@ -17,6 +17,7 @@
         "path": "data/building_metadata.csv",
         "type": "csv",
         "vars": [
+          "site_id",
           "building_id",
           "primary_use",
           "square_feet",
@@ -35,6 +36,24 @@
           "meter",
           "timestamp",
           "meter_reading"
+        ],
+        "datetime": "timestamp",
+        "datetime_format": ""
+      },
+      {
+        "name": "weather",
+        "path": "data/weather_train.csv",
+        "type": "csv",
+        "vars": [
+          "site_id",
+          "timestamp",
+          "air_temperature",
+          "cloud_coverage",
+          "dew_temperature",
+          "precip_depth_1_hr",
+          "sea_level_pressure",
+          "wind_direction",
+          "wind_speed"
         ],
         "datetime": "timestamp",
         "datetime_format": ""
